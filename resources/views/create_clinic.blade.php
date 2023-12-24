@@ -1,4 +1,4 @@
-<!-- resources/views/create_branch.blade.php -->
+<!-- resources/views/create_clinic.blade.php -->
 
 @extends('back.layout.main-layout')
 @section('pageTitle', isset($pageTitle) ? $pageTitle : 'Page Title here')
@@ -11,21 +11,21 @@
 
 <body>
     <div class="card-box mb-30">
-        <h2 class="h4 pd-20">Create Branch</h2>
+        <h2 class="h4 pd-20">Create Clinic</h2>
         <div class="table-responsive">
             <div class="card-body">
-                <form action="{{ route('branch.create') }}" method="post">
+                <form action="{{ route('clinic.create') }}" method="post">
                     @csrf
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="name">Name Of Branch</label>
-                            <input type="text" class="form-control" name="name" placeholder="Branch Name" required>
+                            <label for="name">Name Of Clinic</label>
+                            <input type="text" class="form-control" name="name" placeholder="Clinic Name" required>
                         </div>
 
                         <div class="form-group col-md-6">
                             <label for="location">Location</label>
-                            <input type="text" class="form-control" name="location" placeholder="Branch Location" required>
+                            <input type="text" class="form-control" name="location" placeholder="Clinic Location" required>
                         </div>
                     </div>
 
@@ -47,16 +47,16 @@
                     <div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input type="submit" class="btn btn-primary btn-block" value="Create Branch">
+                                <input type="submit" class="btn btn-primary btn-block" value="Create Clinic">
                             </div>
                         </div>
                     </div>
                 </form>
 
-                <!-- Button to view branches -->
+                <!-- Button to view clinics -->
                 <div class="text-left">
                     <div class="form-group col-md-6">
-                        <a href="{{ route('branch.view') }}" class="btn btn-primary btn-block">View Branches</a>
+                        <a href="{{ route('clinic.view') }}" class="btn btn-primary btn-block">View Clinics</a>
                     </div>
                 </div>
             </div>

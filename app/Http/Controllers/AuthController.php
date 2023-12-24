@@ -8,21 +8,21 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Models\Branch;
-
+use App\Models\Clinic; // Update the import statement
 
 class AuthController extends Controller
 {
     public function showRegistrationForm()
     {
-        // Fetch all branches from the database
-        $branches = Branch::all();
-    
-        return view('logins.register', compact('branches'));
+        // Fetch all clinics from the database
+        $clinics = Clinic::all(); // Update the model
+
+        return view('logins.register', compact('clinics')); // Update the variable name
     }
 
     public function register(Request $request)
     {
+        
         // Validate the form data
         $validatedData = $request->validate([
             'username' => 'required|string|max:50',
@@ -35,7 +35,7 @@ class AuthController extends Controller
             'email' => 'required|email|max:50',
             'role' => 'required|in:admin,cashier,client',
             'password' => 'required|string|max:255',
-            'branch_id' => 'required|exists:branches,id', // Add this line for branch validation
+            'clinic_id' => 'required|exists:clinics,id', // Change 'branch_id' to 'clinic_id'
         ]);
     
         // Hash the password before creating the user
@@ -48,13 +48,14 @@ class AuthController extends Controller
     
         return redirect()->route('login.form');
     }
+    
 
-        public function showLoginForm()
-        {
-            return view('logins.login');
-        }
+    public function showLoginForm()
+    {
+        return view('logins.login');
+    }
 
-        public function login(Request $request)
+    public function login(Request $request)
 {
     $credentials = $request->validate([
         'email' => 'required|email',
@@ -64,52 +65,48 @@ class AuthController extends Controller
     $user = User::where('email', $credentials['email'])->first();
 
     if ($user && Auth::attempt(['email' => $credentials['email'], 'password' => $credentials['password']])) {
-        // Check if the user has access to the current branch
-        if ($user->branch_id === auth()->user()->branch_id) {
+        // Check if the user has access to the current clinic
+        if ($user->clinics_id === auth()->user()->clinics_id) {
             // Redirect based on the user's role
             switch ($user->role) {
                 case 'admin':
                     return redirect()->route('admin.home');
-                case 'cashier':
-                    return redirect('/cashier');
-                case 'client':
+                case 'staff':
+                    return redirect('/staff');
+                case 'patient':
                     return redirect()->route('customer');
                 default:
                     return redirect()->route('dashboard');
             }
         } else {
-            // User does not have access to the current branch
+            // User does not have access to the current clinic
             Auth::logout();
-            return redirect()->route('login.form')->with('error', 'You do not have access to this branch.');
+            return redirect()->route('login.form')->with('error', 'You do not have access to this clinic.');
         }
     }
 
     // Redirect back to the login form if authentication fails
     return redirect()->route('login.form')->with('error', 'Invalid credentials');
 }
-    
-        // ... (other methods)
-    
-        public function logout()
-        {
-            // Check if the user is logged in
-            if (Auth::check()) {
-                // Get the currently authenticated user
-                $user = Auth::user();
-        
-                // Log the user out
-                Auth::logout();
-        
-                // Clear all session data
-                Session::flush();
-        
-                // Redirect to the login form with a success message
-                return redirect()->route('login.form')->with('success', "You have been logged out successfully, $user->name.");
-            }
-        
-            // If the user is not logged in, simply redirect to the login form
-            return redirect()->route('login.form');
+
+    public function logout()
+    {
+        // Check if the user is logged in
+        if (Auth::check()) {
+            // Get the currently authenticated user
+            $user = Auth::user();
+
+            // Log the user out
+            Auth::logout();
+
+            // Clear all session data
+            Session::flush();
+
+            // Redirect to the login form with a success message
+            return redirect()->route('login.form')->with('success', "You have been logged out successfully, $user->name.");
         }
 
-
+        // If the user is not logged in, simply redirect to the login form
+        return redirect()->route('login.form');
+    }
 }

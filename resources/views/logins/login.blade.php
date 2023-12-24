@@ -9,18 +9,17 @@
         <h2 class="text-center text-primary">Login</h2>
     </div>
 
-   @if (Session::has('notification'))
-    <div class="alert alert-success">
-        {{ Session::get('notification') }}
-    </div>
-@endif
+    @if (Session::has('notification'))
+        <div class="alert alert-success">
+            {{ Session::get('notification') }}
+        </div>
+    @endif
 
-@if (Session::has('error'))
-    <div class="alert alert-danger">
-        {{ Session::get('error') }}
-    </div>
-@endif
-
+    @if (Session::has('error'))
+        <div class="alert alert-danger">
+            {{ Session::get('error') }}
+        </div>
+    @endif
 
     <form action="{{ route('login') }}" method="post">
         @csrf

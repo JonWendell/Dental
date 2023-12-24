@@ -50,7 +50,12 @@
     <input type="number" name="age" value="{{ $user->age }}"><br>
 
     <label for="role">Role:</label>
-    <input type="text" name="role" value="{{ $user->role }}" required><br>
+    <select name="role" required>
+        <option value="admin" {{ $user->role === 'admin' ? 'selected' : '' }}>Admin</option>
+        <option value="client" {{ $user->role === 'client' ? 'selected' : '' }}>Client</option>
+        <option value="cashier" {{ $user->role === 'cashier' ? 'selected' : '' }}>Cashier</option>
+        <!-- Add more role options if needed -->
+    </select><br>
 
     <input type="submit" value="Update User">
 </form>

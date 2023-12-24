@@ -92,15 +92,13 @@
         </div>
 
         <div class="form-group">
-            <label for="branch_id">Branch:</label>
-            <select name="branch_id" class="form-control" required>
-                @foreach($branches as $branch)
-                <option value="{{ $branch->id }}">{{ $branch->name }}</option>
+            <label for="clinic_id">Clinic:</label>
+            <select name="clinic_id" class="form-control" required>
+                @foreach($clinics as $clinic)
+                <option value="{{ $clinic->id }}">{{ $clinic->name }}</option>
                 @endforeach
             </select>
         </div>
-
-     
 
         <!-- Add more fields if needed -->
 

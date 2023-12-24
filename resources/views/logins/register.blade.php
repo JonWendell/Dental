@@ -89,19 +89,22 @@
                 </div>
             </div>
         </div>
+
         <div class="form-group">
-            <label for="branch_id">Branch:</label>
-            <select class="form-control" id="branch" name="branch_id" required>
-                @foreach($branches as $branch)
-                    <option value="{{ $branch->id }}">{{ $branch->name }}</option>
+            <label for="clinic_id">Clinic:</label>
+            <select class="form-control" id="clinic_id" name="clinic_id" required>
+                @foreach($clinics as $clinic)
+                    <option value="{{ $clinic->id }}">{{ $clinic->name }}</option>
                 @endforeach
             </select>
         </div>
+
         <div class="row mb-3">
             <div class="col-md-6">
                 <div class="input-group custom">
                     <select class="form-control form-control-lg" id="role" name="role" required>
-                        <option value="client">Client</option>
+                        <option value="admin">Admin</option>
+                        <option value="patient">Patient</option>
                     </select>
                     <div class="input-group-append custom">
                         <span class="input-group-text"><i class="icon-copy dw dw-user"></i></span>
@@ -131,6 +134,4 @@
         </div>
     </form>
 </div>
-
-
 @endsection

@@ -488,7 +488,7 @@
 							<!-- Add the following button for creating a branch -->
 							<ul class="submenu">
 								<li>
-							<a href="/create-branch" >Create Branch</a>
+							<a href="/create-clinic" >Create Branch</a>
 						</li>
 					</ul>
 						</li>                    

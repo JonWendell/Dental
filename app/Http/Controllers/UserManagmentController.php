@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Branch;
+use App\Models\Clinic; // Updated import statement
 use Illuminate\Support\Facades\Hash;
 
 class UserManagmentController extends Controller
@@ -45,10 +45,10 @@ class UserManagmentController extends Controller
 
     public function showAddUserForm()
     {
-        // Fetch all branches from the database
-        $branches = Branch::all();
+        // Fetch all clinics from the database (updated variable name)
+        $clinics = Clinic::all();
 
-        return view('usermanagement.adduserform', compact('branches'));
+        return view('usermanagement.adduserform', compact('clinics'));
     }
 
     public function storeUser(Request $request)
@@ -59,7 +59,7 @@ class UserManagmentController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|string|min:6',
             'firstName' => 'string|max:255', // Add validation for firstName
-            'branch_id' => 'required|exists:branches,id', // Add validation for branch_id
+            'clinic_id' => 'required|exists:clinics,id', // Updated validation for clinic_id
 
         ]);
 
@@ -77,7 +77,7 @@ class UserManagmentController extends Controller
             'gender' => $request->input('gender'),
             'age' => $request->input('age'),
             'role' => $request->input('role'),
-            'branch_id' => $request->input('branch_id'),
+            'clinic_id' => $request->input('clinic_id'), // Updated field name
             'created_at' => now(),
         ]);
 
@@ -89,7 +89,8 @@ class UserManagmentController extends Controller
         $user = User::find($id);
         return view('usermanagement.userdetails', compact('user'));
     }
-        public function showEditUserForm($id)
+
+    public function showEditUserForm($id)
     {
         $user = User::find($id);
         return view('usermanagement.edituser', compact('user'));

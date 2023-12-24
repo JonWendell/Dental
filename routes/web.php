@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BranchController;
+use App\Http\Controllers\ClinicController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserManagmentController;
 use App\Http\Controllers\CashierController;
@@ -52,13 +52,14 @@ Route::group(['prefix' => 'user'], function () {
 
 
 
-//branch routes nakakalito na to //
-Route::get('/create-branch', [BranchController::class, 'createForm'])->name('branch.create.form');
-Route::post('/create-branch', [BranchController::class, 'create'])->name('branch.create');
-Route::get('/view-branches', [BranchController::class, 'view'])->name('branch.view');
-Route::get('/edit-branch/{id}', [BranchController::class, 'editForm'])->name('branch.edit.form');
-Route::delete('/archive-branch/{id}', [BranchController::class, 'archive'])->name('branch.archive');
-Route::put('/update-branch/{id}', [BranchController::class, 'update'])->name('branch.update');
+// Clinic routes
+Route::get('/create-clinic', [ClinicController::class, 'createForm'])->name('clinic.create.form');
+Route::post('/create-clinic', [ClinicController::class, 'create'])->name('clinic.create');
+Route::get('/view-clinics', [ClinicController::class, 'view'])->name('clinic.view');
+Route::get('/edit-clinic/{id}', [ClinicController::class, 'editForm'])->name('clinic.edit.form');
+Route::put('/update-clinic/{id}', [ClinicController::class, 'update'])->name('clinic.update');
+Route::delete('/archive-clinic/{id}', [ClinicController::class, 'archive'])->name('clinic.archive');
+
 //CLIENT side//
 
 Route::get('/home1', [ClientController::class, 'home1'])->name('home1');
