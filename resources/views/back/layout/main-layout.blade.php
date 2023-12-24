@@ -490,7 +490,7 @@
                         <li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-box"></span
-								><span class="mtext">Inventory</span>
+								><span class="mtext">Mapping</span>
 							</a>
 							<ul class="submenu">
 								<li>			

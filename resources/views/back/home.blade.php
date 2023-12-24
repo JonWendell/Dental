@@ -469,6 +469,18 @@
 						</li>
                         -->
 						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-arrow-up-right-square"></span
+								><span class="mtext">Appointment</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-arrow-up-right-square"></span
+								><span class="mtext">Reports</span>
+							</a>
+						</li>
+						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-building"></span>
 								<span class="mtext">Manage Branch</span>
@@ -483,7 +495,7 @@
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-person"></span>
-								<span class="mtext">Manage User</span>
+								<span class="mtext">Clinic Management</span>
 							</a>
 							<!-- Add the button to navigate to the route for managing users -->	
 							<ul class="submenu">
@@ -494,36 +506,20 @@
                         <li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-box"></span
-								><span class="mtext">Inventory</span>
-							</a>
-									
-							
+								><span class="mtext">Mapping</span>
+							</a>								
 						</li>
 						</ul>
-                        <li class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle no-arrow">
-                                <i class="micon bi bi-graph-up"></i>
-                                <span class="mtext">Statistics</span>
-                            </a>
-                        </li>
+                        
                         <li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-arrow-up-right-square"></span
-								><span class="mtext">Analysis</span>
+								><span class="mtext">Visualization</span>
 							</a>
 						</li>
-                        <li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-cart3"></span
-								><span class="mtext">E-commerce</span>
-							</a>
-						</li>
-                        <li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-bag"></span
-								><span class="mtext">Sales</span>
-							</a>
-						</li>
+
+                       
+                       
 						<li>
 							<a href="chat.html" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-chat-right-dots"></span
