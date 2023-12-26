@@ -4,7 +4,7 @@
 <!-- doccure/blank-page.html  30 Nov 2019 04:12:20 GMT -->
 <head>
 		<meta charset="utf-8">
-		<title>eMed</title>
+		<title>OralEase</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -44,7 +44,7 @@
                     </span>
                 </a>
                 <a href="index-2.html" class="navbar-brand logo">
-                    <img src="/back/vendors/images/RXCUE PHARMACY.png" class="img-fluid" alt="Logo">
+                    <img src="/back/images/OralEase.png" class="img-fluid" alt="Logo">
                 </a>
             </div>
             <div class="main-menu-wrapper">
@@ -59,7 +59,7 @@
 				<ul class="main-nav">
 					<li><a href="{{ route('home1') }}">Home</a></li>
 					<li><a href="{{ route('about2') }}">About</a></li>
-					<li><a href="{{ route('product1') }}">Products</a></li>
+					<li><a href="{{ route('dentalClinic') }}">Clinics</a></li>
 					</ul>
             </div>
             <ul class="nav header-navbar-rht">
@@ -100,7 +100,7 @@
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="{{ route('home1') }}">Home</a></li>
 									<li class="breadcrumb-item active" aria-current="page"><a href="{{ route('about2') }}">About</a></li>
-									<li class="breadcrumb-item active" aria-current="page"><a href="{{ route('product1') }}">Products</a></li>
+									<li class="breadcrumb-item active" aria-current="page"><a href="{{ route('about2') }}">Clinics</a></li>
 								</ol>
 							</nav>
 						</div>
@@ -135,7 +135,8 @@
 								<div class="footer-widget footer-about">
 									<h2 class="footer-title">About Us</h2>
 									<div class="footer-about-content">
-										<p>eMed is committed to providing quality healthcare services and products. Our experienced pharmacists are dedicated to ensuring you receive the best possible care for your health needs.</p>
+										<p>OralEase is committed to providing quality healthcare services and products.
+										   Our experienced dentists are dedicated to ensuring you receive the best possible care for your health needs.</p>
 										<div class="social-icon">
 											<ul>
 												<li>
@@ -167,10 +168,10 @@
 								<div class="footer-widget footer-menu">
 									<h2 class="footer-title">Client Features</h2>
 									<ul>
-										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Search for Products</a></li>
+										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Search for Clinics</a></li>
 										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Login</a></li>
 										<li><a href="register.html"><i class="fas fa-angle-double-right"></i> Register</a></li>
-										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Purchase</a></li>
+										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Appointment</a></li>
 										<li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Client Website</a></li>
 									</ul>
 								</div>
@@ -202,7 +203,7 @@
 									<div class="footer-contact-info">
 										<div class="footer-address">
 											<span><i class="fas fa-map-marker-alt"></i></span>
-											<p> Calero, Calapan City Oriental Mindoro, Philippines</p>
+											<p> JP SubsStreet, San Vicente East, Calapan City Oriental Mindoro, Philippines</p>
 										</div>
 										<p>
 											<i class="fas fa-phone-alt"></i>
@@ -210,7 +211,7 @@
 										</p>
 										<p class="mb-0">
 											<i class="fas fa-envelope"></i>
-											rxcue@example.com
+											oralease@gmail.com
 										</p>
 									</div>
 								</div>

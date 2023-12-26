@@ -2,6 +2,8 @@
 
 // app/Models/User.php
 
+// app/Models/User.php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -21,13 +23,17 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-   
-
     // Adjust the relationship to BelongsTo
-        public function clinic()
+    public function clinic()
     {
-        return $this->belongsTo(Clinic::class, 'clinics_id');
+        return $this->belongsTo(Clinic::class, 'clinic_id');
     }
-        
+
+    // Add a relationship to appointments
+    public function appointments()
+    {
+        return $this->hasMany(Appointment::class);
+    }
+    
 }
 

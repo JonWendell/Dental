@@ -86,8 +86,8 @@
             <label for="role">Role:</label>
             <select name="role" class="form-control" required>
                 <option value="admin">Admin</option>
-                <option value="client">Client</option>
-                <option value="cashier">Cashier</option>
+                <option value="patient">Patient</option>
+                <option value="staff">Staff</option>
             </select>
         </div>
 

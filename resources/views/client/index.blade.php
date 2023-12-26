@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the Customer Page</title>
-
-    <!-- Add your additional head elements here, such as stylesheets or scripts -->
+    <title>Make an Appointment</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome to the Customer Page</h1>
+    <div>
+        <h1>Make an Appointment</h1>
+        <form action="{{ route('appointments.store') }}" method="post">
+            @csrf
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" required>
 
-        <!-- Add your content here -->
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" required>
 
-        <p>This is a sample view for the ClientController.</p>
+            <label for="appointment_date">Appointment Date:</label>
+            <input type="date" name="appointment_date" required>
 
-        <!-- Example of looping through data if passed from the controller -->
-        {{-- @foreach($data as $item)
-            <p>{{ $item }}</p>
-        @endforeach --}}
+            <label for="appointment_time">Appointment Time:</label>
+            <input type="time" name="appointment_time" required>
 
-        <!-- Logout Button -->
+            <button type="submit">Make Appointment</button>
+        </form>
+
         <form method="GET" action="{{ route('manual.logout') }}">
             <button type="submit">Logout</button>
         </form>
     </div>
-
-    <!-- Add your additional scripts or footer content here -->
-
 </body>
 
 </html>

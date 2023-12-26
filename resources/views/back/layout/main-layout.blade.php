@@ -432,9 +432,9 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					<img src="/back/vendors/images/RXCUE PHARMACY.png" alt="" class="dark-logo" />
+					<img src="/back/images/OralEase.png" alt="" class="dark-logo" />
 					<img
-						src="/vendors/images/deskapp-logo-white.svg"
+						src="/back/images/OralEase.png"
 						alt=""
 						class="light-logo"
 					/>
@@ -447,12 +447,11 @@
 				<div class="sidebar-menu">
 					<ul id="accordion-menu">
 						<li class="dropdown">
-							<a href="{{ route('admin.home') }}" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-house"></span>
-								<span class="mtext">Home</span>
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-house"></span
+								><span class="mtext">Home</span>
 							</a>
 						</li>
-						
                         <!--
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
@@ -465,88 +464,64 @@
 						</li>
                         -->
 						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-building"></span>
-								<span class="mtext">Manage Branch</span>
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-arrow-up-right-square"></span
+								><span class="mtext">Appointment</span>
 							</a>
-							<!-- Add the following button for creating a branch -->
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-arrow-up-right-square"></span
+								><span class="mtext">Reports</span>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-building"></span>
+								<span class="mtext">Manage Clinics</span>
+							</a>
 							<ul class="submenu">
 								<li>
-							<a href="/create-branch" >Create Branch</a>
-						</li>
-					</ul>
+							<a href="/create-branch" >Add Clinic</a></ul>
+							<!-- Add the following button for creating a branch -->
 						</li>                    
 						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-person"></span>
-								<span class="mtext">Manage User</span>
+								<span class="mtext">User Management</span>
 							</a>
 							<!-- Add the button to navigate to the route for managing users -->	
 							<ul class="submenu">
 								<li>				
 							<a href="{{ route('userTable') }}">Manage Users</a>
+							<a href="{{ route('userTable') }}">Manage Staff</a>
 						</li>
 						</ul>
                         <li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-box"></span
 								><span class="mtext">Mapping</span>
-							</a>
-							<ul class="submenu">
-								<li>			
-							
-						
+							</a>								
 						</li>
 						</ul>
-                        <li class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle no-arrow">
-                                <i class="micon bi bi-graph-up"></i>
-                                <span class="mtext">Statistics</span>
-                            </a>
-                        </li>
+						<ul>
                         <li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-arrow-up-right-square"></span
-								><span class="mtext">Analysis</span>
+								><span class="mtext">Visualization</span>
 							</a>
 						</li>
-                        <li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-cart3"></span
-								><span class="mtext">E-commerce</span>
-							</a>
-						</li>
-                        <li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-bag"></span
-								><span class="mtext">Sales</span>
-							</a>
-						</li>
+
+                     </ul>
+                       <ul>
 						<li>
 							<a href="chat.html" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-chat-right-dots"></span
 								><span class="mtext">Chat</span>
 							</a>
 						</li>
-					
-						<li>
-							<div class="dropdown-divider"></div>
-						</li>
-						<li>
-
-						<li>
-							<a
-								href="https://dropways.github.io/deskapp-free-single-page-website-template/"
-								target="_blank"
-								class="dropdown-toggle no-arrow"
-							>
-								<span class="micon bi bi-layout-text-window-reverse"></span>
-								<span class="mtext"
-									>Landing Page
-								</span>
-							</a>
-						</li>
 					</ul>
+						
 				</div>
 			</div>
 		</div>
@@ -559,7 +534,7 @@
 				</div>
 			</div>
 				<div class="footer-wrap pd-20 mb-20 card-box">
-					@2023 | RXCUE PHARMACY
+					@2023 | OralEase
 				</div>
 			</div>
 		</div>

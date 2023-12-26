@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>RXCue Pharmacy</title>
+		<title>OralEase</title>
 
 		<!-- Site favicon -->
 		<link

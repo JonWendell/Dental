@@ -4,7 +4,7 @@
 <!-- doccure/blank-page.html  30 Nov 2019 04:12:20 GMT -->
 <head>
 		<meta charset="utf-8">
-		<title>eMed</title>
+		<title>OralEase</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -59,7 +59,7 @@
                 <ul class="main-nav">
 				<li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About</a></li>
-                <li><a href="{{ route('products') }}">Products</a></li>
+                <li><a href="{{ route('dentalClinic') }}">Clinics</a></li>
                 </ul>
             </div>
             <ul class="nav header-navbar-rht">
@@ -145,14 +145,14 @@
 										<img src="/back/vendors/images/medicines-l.webp" alt="Pharmacy Image">
 									</div>
 									<div class="col-12">
-										<h1>Welcome to eMed - Your Trusted Pharmacy</h1>
+										<h1>Welcome to OralEase - Your Trusted Dental Clinics</h1>
 										<p>
-											eMed is committed to providing quality healthcare services and products. Our experienced
-											pharmacists are dedicated to ensuring you receive the best possible care for your health needs.
+											OralEase is committed to providing quality healthcare services and products. Our experienced
+											dentists are dedicated to ensuring you receive the best possible care for your health needs.
 										</p>
 										<p>
 											Whether you need prescriptions filled, health consultations, or access to a wide range of
-											healthcare products, eMed is here for you.
+											healthcare products, OralEase is here for you.
 										</p>
 									</div>
 								</div>
@@ -178,7 +178,7 @@
 									<h2 class="footer-title">About us</h2>
 									
 									<div class="footer-about-content">
-										<p>eMed is committed to providing quality healthcare services and products. Our experienced pharmacists are dedicated to ensuring you receive the best possible care for your health needs. </p>
+										<p>OralEase is committed to providing quality healthcare services and products. Our experienced dentists are dedicated to ensuring you receive the best possible care for your health needs. </p>
 										<div class="social-icon">
 											<ul>
 												<li>
@@ -210,10 +210,10 @@
 								<div class="footer-widget footer-menu">
 									<h2 class="footer-title">Client Features</h2>
 									<ul>
-										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Search for Products</a></li>
+										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Search for Clinics</a></li>
 										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Login</a></li>
 										<li><a href="register.html"><i class="fas fa-angle-double-right"></i> Register</a></li>
-										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Purchase</a></li>
+										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Appointment</a></li>
 										<li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Client Website</a></li>
 									</ul>
 								</div>
@@ -245,7 +245,7 @@
 									<div class="footer-contact-info">
 										<div class="footer-address">
 											<span><i class="fas fa-map-marker-alt"></i></span>
-											<p> Calero, Calapan City Oriental Mindoro, Philippines</p>
+											<p>JP SubStreet, San Vicente East, Calapan City Oriental Mindoro, Philippines</p>
 										</div>
 										<p>
 											<i class="fas fa-phone-alt"></i>
@@ -253,7 +253,7 @@
 										</p>
 										<p class="mb-0">
 											<i class="fas fa-envelope"></i>
-											rxcue@example.com
+											oralease@gmail.com
 										</p>
 									</div>
 								</div>

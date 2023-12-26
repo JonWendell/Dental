@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eMed - Home</title>
+    <title>OralEase - Home</title>
     <!-- Add your stylesheet link and other meta tags here -->
     <style>
         .content {
@@ -46,17 +46,17 @@
     <div class="content">
         <div class="container-fluid">
             <div class="col-12">
-                <img src="/back/vendors/images/medicines-l.webp" alt="Pharmacy Image">
+                <img src="/back/images/loginpic.jpg" alt="dental Image">
             </div>
             <div class="col-12">
-                <h1>Welcome to eMed - Your Trusted Pharmacy</h1>
+                <h1>Welcome to OralEase - Your Trusted Dental Clinics</h1>
                 <p>
-                    eMed is committed to providing quality healthcare services and products. Our experienced
-                    pharmacists are dedicated to ensuring you receive the best possible care for your health needs.
+                   OralEase is committed to providing quality healthcare services and products. Our experienced
+                   dentists are dedicated to ensuring you receive the best possible care for your health needs.
                 </p>
                 <p>
                     Whether you need prescriptions filled, health consultations, or access to a wide range of
-                    healthcare products, eMed is here for you.
+                    healthcare products, OralEase is here for you.
                 </p>
             </div>
         </div>

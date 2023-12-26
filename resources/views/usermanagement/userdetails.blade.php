@@ -41,8 +41,8 @@
             <p><strong>Age:</strong> {{ $user->age }}</p>
             <p><strong>Role:</strong> {{ $user->role }}</p>
 
-            <!-- Display the associated branch -->
-            <p><strong>Branch:</strong> {{ $user->branch->name }}</p>
+            <!-- Display the associated clinic -->
+            <p><strong>Branch:</strong> {{ $user->clinic->name }}</p>
         </div>
 
         <div>

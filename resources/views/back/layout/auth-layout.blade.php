@@ -10,19 +10,19 @@
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="/back/vendors/images/apple-touch-icon.png"
+			href="/back/images/OralEase.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="/back/vendors/images/favicon-32x32.png"
+			href="/back/images/OralEase.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="/back/vendors/images/favicon-16x16.png"
+			href="/back/images/OralEase.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -45,7 +45,16 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="/back/vendors/styles/style.css" />
        @stack('stylesheets')
+
+	   <style>
+		div {
+			background-color: white;
+			color: blue; /* You can adjust the text color as needed */
+		}
+	</style>
+	
 	</head>
+
 	<body class="login-page">
 		<div class="login-header box-shadow">
 			<div
@@ -53,7 +62,7 @@
 			>
 				<div class="brand-logo">
 					<a href="login.html">
-						<img src="/back/vendors/images/deskapp-logo.svg" alt="" />
+						<img src="/back/images/OralEase.png" alt="" />
 					</a>
 				</div>
 
@@ -65,7 +74,7 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6 col-lg-7">
-						<img src="/back/vendors/images/login-page-img.png" alt="" />
+						<img src="/back/images/loginpic.jpg" alt="" />
 					</div>
 					<div class="col-md-6 col-lg-5">
 						@yield('content')

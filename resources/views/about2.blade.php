@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - eMed</title>
+    <title>About Us - OralEase</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -64,19 +64,18 @@
     <div class="content">
         <div class="container-fluid">
             <div class="col-12">
-                <img src="/back/vendors/images/medicines-l.webp" alt="Pharmacy Image">
+                <img src="/back/images/loginpic.jpg" alt="dental Image">
             </div>
             <div class="col-12">
-                <h1>Welcome to eMed - Your Trusted Pharmacy</h1>
+                <h1>Welcome to OralEase - Your Trusted Dental Clinics</h1>
                 <p class="about-text">
-                    At eMed, our commitment extends beyond providing healthcare services and products – it's about fostering
-                    a seamless experience for your well-being. Our team of experienced pharmacists is dedicated to ensuring
-                    you receive the highest standard of care for all your health needs.
+                    At OralEase, our commitment goes beyond merely providing healthcare services and products – it's about fostering a seamless experience for your well-being. 
+                    Our team of experienced dentists is dedicated to ensuring you receive the highest standard of care for all your health needs.
                 </p>
                 <p class="about-text">
-                    Whether you require prescription fulfillment, health consultations, or access to a diverse range of healthcare
-                    products, eMed stands ready to serve you. We are more than a pharmacy; we are your dedicated partner on
-                    your journey to optimal health.
+                    Whether you require prescription fulfillment, health consultations, or access to a diverse range of healthcare products, 
+                    OralEase stands ready to serve you. We are more than a dental clinic; we are your dedicated partner on your journey to optimal oral health. Our mission is to provide personalized and comprehensive dental care in a comfortable and welcoming environment. 
+                    From routine check-ups to advanced dental procedures, our skilled team is here to meet all your oral health needs.
                 </p>
             </div>
         </div>
@@ -85,34 +84,31 @@
     <div class="content">
         <div class="container-fluid">
             <div class="col-12">
-                <h1>RxCue Pharmacy – Redefining Your Health, Beauty, and Well-Being Experience.</h1>
+                <h1>Redefining Your Health, Beauty, and Well-Being Experience.</h1>
                 <p class="about-text">
-                    With an extensive network of over 399 branches strategically located across the nation,
-                    RxCue Pharmacy stands as a prominent leader in the pharmaceutical retail landscape of the
-                    Philippines. We take pride in facilitating easy access to premium health and beauty products,
-                    striving to enhance the overall well-being of our valued customers.
+                    With an extensive network of dental clinics strategically located across the nation, 
+                    OralEase stands as a prominent leader in the dental healthcare landscape. 
+                    We take pride in facilitating easy access to premium dental services, 
+                    striving to enhance the overall well-being of our valued patients.
                 </p>
                 <p class="about-text">
-                    In a landmark collaboration, RxCue Pharmacy proudly joined forces with Robinsons Retail Holdings
-                    Inc. (RRHI) in October 2020. This strategic partnership, coupled with our unwavering commitment
-                    to delivering an unparalleled health and beauty shopping experience, has propelled RxCue Pharmacy
-                    to new heights. We go beyond conventional limits to cater to our customers, offering services
-                    that extend to their doorstep through RosExpress Delivery, nationwide access via the Rose Pharmacy
-                    Online Store, and the convenience of round-the-clock service with our 24-Hour stores.
+                    In a landmark collaboration, OralEase proudly joined forces with Robinsons Retail Holdings Inc. (RRHI) in October 2020. 
+                    This strategic partnership, coupled with our unwavering commitment to delivering unparalleled dental care, 
+                    has propelled OralEase to new heights. We go beyond conventional limits to cater to our patients, 
+                    offering a wide range of services from routine dental check-ups to cosmetic dentistry, orthodontics, and oral surgery.
                 </p>
                 <p class="about-text">
-                    Driven by a dedication to provide value, RxCue Pharmacy introduces the Rose Pharmacy Generics line,
-                    ensuring the widespread availability of high-quality prescription and over-the-counter medicines
-                    at affordable prices. Our Guardian line of personal care products extends gentle, quality care to
-                    every member of your family, consistently maintaining budget-friendly prices. Explore additional
-                    savings through our monthly Hot Deals, SuperSavers, Buy More Save More promotions, and exclusive
-                    special offers, providing exceptional value whether you choose to shop in-store or online.
+                    Driven by a dedication to provide value, OralEase ensures the widespread availability of 
+                    high-quality dental services at affordable prices. Our clinics are equipped with state-of-the-art 
+                    technology, and our team of skilled dentists is committed to delivering compassionate care. 
+                    Explore additional savings through our dental care packages, promotions, and exclusive offers, 
+                    providing exceptional value whether you choose to visit our clinics in person or consult with our dentists online.
                 </p>
                 <p class="about-text">
-                    At RxCue Pharmacy, we are not just a pharmacy; we are a trusted partner in your journey toward
-                    holistic well-being. Our mission is to redefine your health and beauty experience by combining
-                    quality products, accessibility, and a touch of passionate care. Thank you for choosing RxCue Pharmacy,
-                    where your health and happiness take center stage.
+                    At OralEase, we are not just a dental clinic; we are a trusted partner in your journey toward holistic oral well-being. 
+                    Our mission is to redefine your dental care experience by combining quality services, accessibility, 
+                    and a touch of passionate care. 
+                    Thank you for choosing OralEase, where your oral health and happiness take center stage.
                 </p>
             </div>
         </div>

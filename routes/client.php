@@ -30,3 +30,12 @@ Route::get('/home1', function () {
 Route::get('/about2', function () {
     return view('about2');
 })->name('about2');
+
+Route::get('/dentalClinic', function () {
+    return view('dentalClinic');
+})->name('dentalClinic');
+
+Route::get('/dentalClinic2', function () {
+    return view('dentalClinic2');
+})->name('dentalClinic2');
+

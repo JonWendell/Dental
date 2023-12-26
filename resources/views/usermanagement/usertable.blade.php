@@ -11,7 +11,7 @@
                 <tr>
                     <th>Username</th>
                     <th>Email</th>
-                    <th>Branch</th>
+                    <th>Clinic Location</th>
                     <th>Created At</th>
                     <th>Action</th>
                     <!-- New column for action buttons -->
@@ -22,7 +22,7 @@
                 <tr>
                     <td>{{ $items->username }}</td>
                     <td>{{ $items->email }}</td>
-                    <td>{{ $items->branch->name ?? 'N/A' }}</td> <!-- Assuming 'name' is the branch attribute -->
+                    <td>{{ $items->clinic->name ?? 'N/A' }}</td> <!-- Assuming 'name' is the clinic attribute -->
                     <td>{{ $items->created_at }}</td>
                     <td>
                         <div class="dropdown">

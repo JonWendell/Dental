@@ -8,6 +8,10 @@ use App\Http\Controllers\CashierController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ClientController;  
+use App\Http\Controllers\StaffController;
+use App\Http\Controllers\AppointmentController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +39,7 @@ Route::middleware(['auth.manual'])->group(function () {
 
 Route::middleware(['auth.manual'])->group(function () {
     Route::get('/customer', [ClientController::class, 'index'])->name('customer');
+    Route::post('/appointments', [ClientController::class, 'store'])->name('appointments.store');
 });
 
 
@@ -64,6 +69,7 @@ Route::delete('/archive-clinic/{id}', [ClinicController::class, 'archive'])->nam
 
 Route::get('/home1', [ClientController::class, 'home1'])->name('home1');
 Route::get('/about2', [CLientController::class, 'about2'])->name('about2');
+Route::get('/dentalClinic2', [PageController::class, 'dentalClinic2'])->name('dentalClinic2');
 
 
 
@@ -75,18 +81,26 @@ Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('
 Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login.form');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
+//apointment routes
+Route::get('/staff', [StaffController::class, 'index'])->name('staff');
+Route::post('/complete-appointment/{appointment}', [StaffController::class, 'completeAppointment'])->name('complete.appointment');
 
 
-//cashier
-
-Route::get('/cashier', [CashierController::class, 'show'])->name('cashier.show');
-Route::get('/cashier/inventory', [CashierController::class, 'showInventory'])->name('cashier.inventory');
 Route::get('/logout', [AuthController::class, 'logout'])->name('manual.logout');
 
 //landingpage
 Route::get('/home', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/products', [PageController::class, 'products'])->name('products');
+Route::get('/dentalClinic', [PageController::class, 'dentalClinic'])->name('dentalClinic');
 
 
+
+
+Route::middleware(['auth'])->group(function () {
+    // Other authenticated routes...
+
+    Route::prefix('appointment')->group(function () {
+        Route::get('completed', [AppointmentController::class, 'completedAppointments'])->name('appointment.completed');
+    });
+});
 
